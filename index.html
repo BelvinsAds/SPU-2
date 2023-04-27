@@ -30,8 +30,31 @@
 
 </head>
 
-<body class="index-arch">
+<body class="index-arch" onload="myFunction()">
+    
+    <section id="MainBody">
+        <div class="ip-header">
+            div class="cssloader" id="cssloader">
+            <div class="imgloadersection">
+                <img src="img/Logo(1).jpg" alt="">
+            </div>
+            <div class="sh1"></div>
+        <div class="sh2"></div>
+        <h4 class="lt">loading</h4>
+        </div>
+    </section>
 
+    <script>
+        var myVar;
+    
+    function myFunction() {
+    myVar = setTimeout(showPage, 3200);
+    }
+    
+    function showPage() {
+    document.getElementById("MainBody").style.display = "none";
+    }
+    </script>
 
     <!-- ==================== Start progress-scroll-button ==================== -->
 
@@ -43,7 +66,15 @@
 
     <!-- ==================== End progress-scroll-button ==================== -->
 
-
+    <!--li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown">About</a>
+        <ul class="dropdown-menu" role="menu">
+            <li><a href="#0" data-scroll-nav="1">Meet The Team</a></li>
+            <li><a href="#0" data-scroll-nav="1">Vision</a></li>
+            <li><a href="#0" data-scroll-nav="1">The SPU Difference</a></li>
+            <li><a href="#0" data-scroll-nav="1">Fitness, Nutrition</a></li>
+        </ul>
+    </li-->
 
     <!-- ==================== Start Navbar ==================== -->
 
@@ -67,14 +98,37 @@
                     <li class="nav-item">
                         <a class="nav-link" href="index.html">Home</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#0" data-scroll-nav="1">What We Do</a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" role="menu" href="What-We-Do.html" >About</a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li class="dropdown-item"><a href="#0" data-scroll-nav="1">Meet The Team</a></li>
+                            <li class="dropdown-item"><a href="#0" data-scroll-nav="1">Vision</a></li>
+                            <li class="dropdown-item"><a href="#0" data-scroll-nav="1">The SPU Difference</a></li>
+                            <li class="dropdown-item"><a href="#0" data-scroll-nav="1">Fitness, Nutrition</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" role="menu" href="pricing.html" >Programs</a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li class="dropdown-item"><a href="#0" data-scroll-nav="1">Pricing, Program Description</a></li>
+                            <li class="dropdown-item"><a href="#0" data-scroll-nav="1">Join Now!</a></li>
+                            <li class="dropdown-item"><a href="#0" data-scroll-nav="1">Fitness, Nutrition</a></li>
+                        </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#0" >Meet The Team</a>
+                        <a class="nav-link" href="#">
+                            Facility
+                        </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="pricing.html" >Pricing</a>
+                        <a class="nav-link" href="#">
+                            Studio
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            Gallery
+                        </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="contact.html">
@@ -92,90 +146,38 @@
 
     <!-- ==================== Start Slider ==================== -->
 
-    <header class="slider arch-slider slider-prlx mt-60" data-scroll-index="0">
-        <div class="swiper-container parallax-slider">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <div class="bg-img valign" data-background="img/slid/4.jpg" data-overlay-dark="4">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-lg-7">
-                                    <div class="caption mt-30">
-                                        <h5 class="yellow-green-bg inline">
-                                            <span>01</span>
-                                        </h5>
-                                        <h1>Unleash <br> Your Potential</h1>
-                                        <p>We developed strong relationships with contractors and specialist companies
-                                            offering discounted prices.</p>
-                                    </div>
-                                </div>
-                                <div class="col-lg-3 offset-lg-1 valign">
-                                    <div class="explore">
-                                        <a href="#">Explore</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+    <header class="index-arch" data-scroll-index="0">
+        <section id="intro">
+            <div class="black-overlay"></div>
+            <div class="containers valigns">
+              <div class="rowvid">
+                <div class="col-md-12">
+                  <!--img
+                    src="img/logoWhite(5).png"
+                    class="img-responsive center-block introLogo"
+                    alt="Intro Logo"
+                  /-->
                 </div>
-                <div class="swiper-slide">
-                    <div class="bg-img valign" data-background="img/slid/5.png" data-overlay-dark="4">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-lg-7">
-                                    <div class="caption mt-30">
-                                        <h5 class="yellow-green-bg inline">
-                                            <span>02</span>
-                                        </h5>
-                                        <h1>Join Us On <br> Our Podcast</h1>
-                                        <p>We developed strong relationships with contractors and specialist companies
-                                            offering discounted prices.</p>
-                                    </div>
-                                </div>
-                                <div class="col-lg-3 offset-lg-1 valign">
-                                    <div class="explore">
-                                        <a href="#">Explore</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <div class="col-md-12 text-center">
+                  <h1 style="font-size: 46px;">Sports Performance Unleashed & Studio</h1>
                 </div>
-                <div class="swiper-slide">
-                    <div class="bg-img valign" data-background="img/slid/6.jpg" data-overlay-dark="4">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-lg-7">
-                                    <div class="caption mt-30">
-                                        <h5 class="yellow-green-bg inline">
-                                            <span>03</span>
-                                        </h5>
-                                        <h1>minimalest architectures</h1>
-                                        <p>We developed strong relationships with contractors and specialist companies
-                                            offering discounted prices.</p>
-                                    </div>
-                                </div>
-                                <div class="col-lg-3 offset-lg-1 valign">
-                                    <div class="explore">
-                                        <a href="#">Explore</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <div class="col-md-12 text-center">
                 </div>
+                <br>
+                <div class="col-md-offset-3 text-center">
+                  <p>
+                    Eat imagine you chiefly few end ferrars compass. Be visitor
+                    females am ferrars inquiry. Latter law remark two lively thrown.
+                    Spot set they know rest its.
+                  </p>
+                </div>
+              </div>
             </div>
+          </section>
+    </header>
 
             <div class="setting">
                 <!-- slider setting -->
-                <div class="controls">
-                    <div class="swiper-button-next swiper-nav-ctrl next-ctrl cursor-pointer">
-                        <i class="ion-chevron-right"></i>
-                    </div>
-                    <div class="swiper-button-prev swiper-nav-ctrl prev-ctrl cursor-pointer">
-                        <i class="ion-chevron-left"></i>
-                    </div>
-                </div>
             </div>
         </div>
     </header>
@@ -636,9 +638,71 @@
 
     <!-- custom scripts -->
     <script src="js/scripts.js"></script>
+    <script src="js/preloader.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
+    <script>
+        !(function () {
+          var e = document.getElementById("trigger-overlay"),
+            n = document.getElementById("trigger-overlay-two"),
+            t = document.getElementById("trigger-overlay-three"),
+            i = document.getElementById("trigger-overlay-four"),
+            r = document.querySelector("div.overlay");
+           //s = r.querySelector("a.overlay-close");
+          function o() {
+            var n;
+            classie.has(r, "open")
+              ? (classie.remove(r, "open"),
+                classie.add(r, "close"),
+                (n = function (e) {
+                  if (support.transitions) {
+                    if ("visibility" !== e.propertyName) return;
+                    this.removeEventListener(transEndEventName, n);
+                  }
+                  classie.remove(r, "close");
+                }),
+                support.transitions
+                  ? r.addEventListener(transEndEventName, n)
+                  : n())
+              : classie.has(r, "close") || classie.add(r, "open"),
+              $("div.overlay").animate({ scrollTop: 0 }, "slow");
+          }
+          (transEndEventNames = {
+            WebkitTransition: "webkitTransitionEnd",
+            MozTransition: "transitionend",
+            OTransition: "oTransitionEnd",
+            msTransition: "MSTransitionEnd",
+            transition: "transitionend",
+          }),
+            (transEndEventName =
+              transEndEventNames[Modernizr.prefixed("transition")]),
+            (support = { transitions: Modernizr.csstransitions }),
+            e.addEventListener("click", o),
+            n.addEventListener("click", o),
+            t.addEventListener("click", o),
+            i.addEventListener("click", o),
+            s.addEventListener("click", o);
+        })();
+      </script>
+      <script src="js/okvideo.min.js"></script>
+      <script>
+        $(function () {
+          "use strict";
+          /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+            navigator.userAgent
+          )
+            ? $.backstretch("img/background1.jpg")
+            : $.okvideo({
+                source: "http://vimeo.com/137519177",
+                autoplay: !0,
+                loop: !0,
+                highdef: !0,
+                hd: !0,
+                adproof: !0,
+                volume: 0,
+              });
+        });
+      </script>
 </body>
 
 </html>
