@@ -11358,6 +11358,9 @@ body.index-main .bg-gray {
   .contact-crv .box-shadow {
     padding: 50px 20px;
   }
+  .navbar-brand {
+    margin-right: 0;
+  }
 }
 
 @media screen and (max-width: 533px) {
