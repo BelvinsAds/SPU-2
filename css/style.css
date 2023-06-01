@@ -106,7 +106,7 @@ html {
 }
 
 body {
-  color: #181b31;
+  color: #fff;
   line-height: 1.5;
   font-weight: 400;
   overflow-x: hidden !important;
@@ -3774,6 +3774,10 @@ img.left {
   color: #fff;
 }
 
+.navbar.light .navbar-nav .nav-link:hover {
+  color: #41a3a7;
+}
+
 .navbar.light .icon-bar {
   color: #fff;
 }
@@ -3956,7 +3960,7 @@ img.left {
 }
 
 .navbar .logo {
-  width: 70px;
+  width: 90px;
 }
 
 .navbar .search-area {
@@ -7632,7 +7636,7 @@ header.simple-header .path a:after {
 /* ====================== [ End services ] ====================== */
 /* ====================== [ Start Pricing ] ====================== */
 .price .item {
-  padding: 40px;
+  padding: 20px;
   border: 1px solid rgba(6, 14, 98, 0.05);
 }
 
